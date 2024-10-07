@@ -19,26 +19,57 @@ PIP_PACKAGES=(
 )
 
 NODES=(
-	"https://github.com/ltdrdata/ComfyUI-Manager"
-	"https://github.com/cubiq/ComfyUI_essentials"
-	"https://github.com/MushroomFleet/DJZ-Nodes"
-	"https://github.com/Gourieff/comfyui-reactor-node"
-	"https://github.com/ltdrdata/ComfyUI-Impact-Pack"
-	"https://github.com/Derfuu/Derfuu_ComfyUI_ModdedNodes"
-	"https://github.com/rgthree/rgthree-comfy"
+#DJZ Nodes
+	#"https://github.com/MushroomFleet/DJZ-Nodes"
+	#"https://github.com/Derfuu/Derfuu_ComfyUI_ModdedNodes"
+	#"https://github.com/sipherxyz/comfyui-art-venture"
+	#"https://github.com/twri/sdxl_prompt_styler"
+	#"https://github.com/hylarucoder/comfyui-copilot"
+	#"https://github.com/KoreTeknology/ComfyUI-Universal-Styler"
+#cubiq
+ 	"https://github.com/cubiq/ComfyUI_essentials"
+  	"https://github.com/cubiq/PuLID_ComfyUI.git"
+   	"https://github.com/cubiq/ComfyUI_InstantID.git"
+    	"https://github.com/cubiq/ComfyUI_IPAdapter_plus.git"
+     	"https://github.com/cubiq/ComfyUI_FaceAnalysis.git"
+#custom nodes
+  	"https://github.com/melMass/comfy_mtb"
+  	"https://github.com/giriss/comfy-image-saver.git"
+   	"https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes"
+    	"https://github.com/Fannovel16/comfyui_controlnet_aux"
+	"https://github.com/city96/ComfyUI_ExtraModels.git"
+ 	#"https://github.com/shiimizu/ComfyUI_smZNodes.git"
+ 	"https://github.com/sugarkwork/comfyui_tag_fillter.git"
+  	"https://github.com/comfyanonymous/ComfyUI_TensorRT.git"
+   	"https://github.com/ssitu/ComfyUI_UltimateSDUpscale.git"
+    	"https://github.com/Kosinkadink/ComfyUI-Advanced-ControlNet.git"
+     	#"https://github.com/Kosinkadink/ComfyUI-AnimateDiff-Evolved.git"
+      	"https://github.com/Extraltodeus/ComfyUI-AutomaticCFG.git"
+	#"https://github.com/Extraltodeus/Skimmed_CFG.git"
+ 	"https://github.com/chibiace/ComfyUI-Chibi-Nodes.git"
 	"https://github.com/crystian/ComfyUI-Crystools"
-	"https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite"
-	"https://github.com/giriss/comfy-image-saver"
-	"https://github.com/Fannovel16/comfyui_controlnet_aux"
-	"https://github.com/WASasquatch/was-node-suite-comfyui"
 	"https://github.com/pythongosssss/ComfyUI-Custom-Scripts"
-	"https://github.com/melMass/comfy_mtb"
-	"https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes"
-	"https://github.com/sipherxyz/comfyui-art-venture"
-	"https://github.com/twri/sdxl_prompt_styler"
-	"https://github.com/hylarucoder/comfyui-copilot"
-	"https://github.com/kijai/ComfyUI-KJNodes"
-	"https://github.com/KoreTeknology/ComfyUI-Universal-Styler"
+	"https://github.com/yolain/ComfyUI-Easy-Use.git"
+ 	"https://github.com/Fannovel16/ComfyUI-Frame-Interpolation.git"
+	"https://github.com/ltdrdata/ComfyUI-Impact-Pack"
+ 	"https://github.com/ltdrdata/ComfyUI-Inspire-Pack.git"
+  	"https://github.com/kijai/ComfyUI-KJNodes"
+	"https://github.com/ltdrdata/ComfyUI-Manager"
+ 	#"https://github.com/whmc76/ComfyUI-Openpose-Editor-Plus.git"
+	"https://github.com/Gourieff/comfyui-reactor-node"
+ 	"https://github.com/jamesWalker55/comfyui-various.git"
+  	"https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite"
+   	"https://github.com/pythongosssss/ComfyUI-WD14-Tagger.git"
+	#"https://github.com/mav-rik/facerestore_cf.git"
+ 	#"https://github.com/klinter007/klinter_nodes.git"
+  	"https://github.com/rgthree/rgthree-comfy"
+   	"https://github.com/kijai/ComfyUI-Florence2.git"
+	"https://github.com/WASasquatch/was-node-suite-comfyui"
+
+
+
+
+
 )
 
 WORKFLOWS=(
@@ -62,15 +93,15 @@ CLIP_MODELS=(
 )
 
 LORA_MODELS=(
-	"https://huggingface.co/mushroomfleet/Flux-Lora-Collection/resolve/main/AssassinKahb-8-16-e9-10.safetensors"
-	"https://huggingface.co/mushroomfleet/Flux-Lora-Collection/resolve/main/AssassinKahb-flux-1024x-Kappa-Prodigy-e12.safetensors"
-	"https://huggingface.co/mushroomfleet/Flux-Lora-Collection/resolve/main/CyberSocietyV0-e1.safetensors"
-	"https://huggingface.co/mushroomfleet/Flux-Lora-Collection/resolve/main/CyberSocietyV1-e1.safetensors"
-	"https://huggingface.co/mushroomfleet/Flux-Lora-Collection/resolve/main/CyberSocietyV3-000001.safetensors"
-	"https://huggingface.co/mushroomfleet/Flux-Lora-Collection/resolve/main/CyberSocietyV33-000010.safetensors"
-	"https://huggingface.co/mushroomfleet/Flux-Lora-Collection/resolve/main/NTTW-V1-Flux-e7-10.safetensors"
-	"https://huggingface.co/mushroomfleet/Flux-Lora-Collection/resolve/main/NTTW-V2-kappa-e11-13.safetensors"
-	"https://huggingface.co/mushroomfleet/Flux-Lora-Collection/resolve/main/NTTW-V3-4-16-e9-10.safetensors"
+	#"https://huggingface.co/mushroomfleet/Flux-Lora-Collection/resolve/main/AssassinKahb-8-16-e9-10.safetensors"
+	#"https://huggingface.co/mushroomfleet/Flux-Lora-Collection/resolve/main/AssassinKahb-flux-1024x-Kappa-Prodigy-e12.safetensors"
+	#"https://huggingface.co/mushroomfleet/Flux-Lora-Collection/resolve/main/CyberSocietyV0-e1.safetensors"
+	#"https://huggingface.co/mushroomfleet/Flux-Lora-Collection/resolve/main/CyberSocietyV1-e1.safetensors"
+	#"https://huggingface.co/mushroomfleet/Flux-Lora-Collection/resolve/main/CyberSocietyV3-000001.safetensors"
+	#"https://huggingface.co/mushroomfleet/Flux-Lora-Collection/resolve/main/CyberSocietyV33-000010.safetensors"
+	#"https://huggingface.co/mushroomfleet/Flux-Lora-Collection/resolve/main/NTTW-V1-Flux-e7-10.safetensors"
+	#"https://huggingface.co/mushroomfleet/Flux-Lora-Collection/resolve/main/NTTW-V2-kappa-e11-13.safetensors"
+	#"https://huggingface.co/mushroomfleet/Flux-Lora-Collection/resolve/main/NTTW-V3-4-16-e9-10.safetensors"
 	"https://huggingface.co/mushroomfleet/Flux-Lora-Collection/resolve/main/NTTW-V3-lite-e10-12.safetensors"
 	"https://huggingface.co/mushroomfleet/Flux-Lora-Collection/resolve/main/NTTW-V4-lite-8-16-e9-10.safetensors"
 	"https://huggingface.co/mushroomfleet/Flux-Lora-Collection/resolve/main/NTTW-v55-e10.safetensors"
@@ -107,6 +138,13 @@ LORA_MODELS=(
 	"https://huggingface.co/mushroomfleet/Flux-Lora-Collection/resolve/main/womanv1-fast.safetensors"
 	"https://huggingface.co/mushroomfleet/Flux-Lora-Collection/resolve/main/womanv2-fast.safetensors"
 	"https://huggingface.co/mushroomfleet/Flux-Lora-Collection/resolve/main/womanv22-000019.safetensors"
+ #Shakker-Labs
+  	"https://huggingface.co/Shakker-Labs/FLUX.1-dev-LoRA-Logo-Design/resolve/main/FLUX-dev-lora-Logo-Design.safetensors"
+   	"https://huggingface.co/Shakker-Labs/FLUX.1-dev-LoRA-AntiBlur/resolve/main/FLUX-dev-lora-AntiBlur.safetensors"
+    	"https://huggingface.co/Shakker-Labs/FilmPortrait/resolve/main/filmfotos.safetensors"
+     	"https://huggingface.co/Shakker-Labs/AWPortrait-FL/resolve/main/AWPortrait-FL-lora.safetensors"
+      
+     	
 )
 
 VAE_MODELS=(
@@ -115,9 +153,9 @@ VAE_MODELS=(
 )
 
 ESRGAN_MODELS=(
-    #"https://huggingface.co/ai-forever/Real-ESRGAN/resolve/main/RealESRGAN_x4.pth"
+    "https://huggingface.co/ai-forever/Real-ESRGAN/resolve/main/RealESRGAN_x4.pth"
     "https://huggingface.co/FacehugmanIII/4x_foolhardy_Remacri/resolve/main/4x_foolhardy_Remacri.pth"
-    #"https://huggingface.co/Akumetsu971/SD_Anime_Futuristic_Armor/resolve/main/4x_NMKD-Siax_200k.pth"
+    "https://huggingface.co/Akumetsu971/SD_Anime_Futuristic_Armor/resolve/main/4x_NMKD-Siax_200k.pth"
 )
 
 CONTROLNET_MODELS=(
@@ -144,6 +182,8 @@ CONTROLNET_MODELS=(
     #"https://huggingface.co/webui/ControlNet-modules-safetensors/resolve/main/t2iadapter_seg-fp16.safetensors"
     #"https://huggingface.co/webui/ControlNet-modules-safetensors/resolve/main/t2iadapter_sketch-fp16.safetensors"
     #"https://huggingface.co/webui/ControlNet-modules-safetensors/resolve/main/t2iadapter_style-fp16.safetensors"
+    	"https://huggingface.co/Shakker-Labs/FLUX.1-dev-ControlNet-Union-Pro/resolve/main/diffusion_pytorch_model.safetensors"
+    	"https://huggingface.co/xinsir/controlnet-union-sdxl-1.0/resolve/main/diffusion_pytorch_model_promax.safetensors"    
 )
 
 ### DO NOT EDIT BELOW HERE UNLESS YOU KNOW WHAT YOU ARE DOING ###
