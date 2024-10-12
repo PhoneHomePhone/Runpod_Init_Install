@@ -20,7 +20,7 @@ PIP_PACKAGES=(
 
 NODES=(
     #DJZ Nodes
-	#"https://github.com/MushroomFleet/DJZ-Nodes"
+    #"https://github.com/MushroomFleet/DJZ-Nodes"
 	#"https://github.com/Derfuu/Derfuu_ComfyUI_ModdedNodes"
 	#"https://github.com/sipherxyz/comfyui-art-venture"
 	#"https://github.com/twri/sdxl_prompt_styler"
