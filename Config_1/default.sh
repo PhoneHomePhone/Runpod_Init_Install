@@ -19,26 +19,26 @@ PIP_PACKAGES=(
 )
 
 NODES=(
-#DJZ Nodes
+    #DJZ Nodes
 	#"https://github.com/MushroomFleet/DJZ-Nodes"
 	#"https://github.com/Derfuu/Derfuu_ComfyUI_ModdedNodes"
 	#"https://github.com/sipherxyz/comfyui-art-venture"
 	#"https://github.com/twri/sdxl_prompt_styler"
 	#"https://github.com/hylarucoder/comfyui-copilot"
 	#"https://github.com/KoreTeknology/ComfyUI-Universal-Styler"
-#cubiq
+    #cubiq
  	"https://github.com/cubiq/ComfyUI_essentials"
-#custom nodes
+    #custom nodes
   	"https://github.com/melMass/comfy_mtb"
   	"https://github.com/giriss/comfy-image-saver.git"
    	"https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes"
-    	"https://github.com/Fannovel16/comfyui_controlnet_aux"
+    "https://github.com/Fannovel16/comfyui_controlnet_aux"
 	"https://github.com/city96/ComfyUI_ExtraModels.git"
  	#"https://github.com/shiimizu/ComfyUI_smZNodes.git"
   	"https://github.com/comfyanonymous/ComfyUI_TensorRT.git"
    	"https://github.com/ssitu/ComfyUI_UltimateSDUpscale.git"
-    	"https://github.com/Kosinkadink/ComfyUI-Advanced-ControlNet.git"
-      	"https://github.com/Extraltodeus/ComfyUI-AutomaticCFG.git"
+    "https://github.com/Kosinkadink/ComfyUI-Advanced-ControlNet.git"
+    "https://github.com/Extraltodeus/ComfyUI-AutomaticCFG.git"
 	#"https://github.com/Extraltodeus/Skimmed_CFG.git"
  	"https://github.com/chibiace/ComfyUI-Chibi-Nodes.git"
 	"https://github.com/crystian/ComfyUI-Crystools"
@@ -53,22 +53,22 @@ NODES=(
  	#"https://github.com/klinter007/klinter_nodes.git"
   	"https://github.com/rgthree/rgthree-comfy"
 	"https://github.com/WASasquatch/was-node-suite-comfyui"
-#ID Tools
+    #ID Tools
   	#"https://github.com/balazik/ComfyUI-PuLID-Flux.git"
    	"https://github.com/cubiq/ComfyUI_InstantID.git"
-    	"https://github.com/cubiq/ComfyUI_IPAdapter_plus.git"
-     	"https://github.com/cubiq/ComfyUI_FaceAnalysis.git"
+    "https://github.com/cubiq/ComfyUI_IPAdapter_plus.git"
+    "https://github.com/cubiq/ComfyUI_FaceAnalysis.git"
   	"https://github.com/cubiq/PuLID_ComfyUI.git"
 	"https://github.com/Gourieff/comfyui-reactor-node"
  	#"https://github.com/mav-rik/facerestore_cf.git"
-#Tagger / LM Tools
-      	"https://github.com/kijai/ComfyUI-Florence2.git"
-        "https://github.com/pythongosssss/ComfyUI-WD14-Tagger.git"
+    #Tagger / LM Tools
+    "https://github.com/kijai/ComfyUI-Florence2.git"
+    "https://github.com/pythongosssss/ComfyUI-WD14-Tagger.git"
  	"https://github.com/sugarkwork/comfyui_tag_fillter.git"
-#Video Tools
+    #Video Tools
   	"https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite"
-     	#"https://github.com/Kosinkadink/ComfyUI-AnimateDiff-Evolved.git"
-       	"https://github.com/Fannovel16/ComfyUI-Frame-Interpolation.git"
+    #"https://github.com/Kosinkadink/ComfyUI-AnimateDiff-Evolved.git"
+    "https://github.com/Fannovel16/ComfyUI-Frame-Interpolation.git"
 )
 
 WORKFLOWS=(
@@ -92,7 +92,7 @@ CLIP_MODELS=(
 )
 
 LORA_MODELS=(
-#DJZ Loras
+    #DJZ Loras
 	#"https://huggingface.co/mushroomfleet/Flux-Lora-Collection/resolve/main/AssassinKahb-8-16-e9-10.safetensors"
 	#"https://huggingface.co/mushroomfleet/Flux-Lora-Collection/resolve/main/AssassinKahb-flux-1024x-Kappa-Prodigy-e12.safetensors"
 	#"https://huggingface.co/mushroomfleet/Flux-Lora-Collection/resolve/main/CyberSocietyV0-e1.safetensors"
@@ -138,7 +138,7 @@ LORA_MODELS=(
 	#"https://huggingface.co/mushroomfleet/Flux-Lora-Collection/resolve/main/womanv1-fast.safetensors"
 	#"https://huggingface.co/mushroomfleet/Flux-Lora-Collection/resolve/main/womanv2-fast.safetensors"
 	#"https://huggingface.co/mushroomfleet/Flux-Lora-Collection/resolve/main/womanv22-000019.safetensors"
- #Shakker-Labs
+    #Shakker-Labs
   	"https://huggingface.co/Shakker-Labs/FLUX.1-dev-LoRA-Logo-Design/resolve/main/FLUX-dev-lora-Logo-Design.safetensors"
    	"https://huggingface.co/Shakker-Labs/FLUX.1-dev-LoRA-AntiBlur/resolve/main/FLUX-dev-lora-AntiBlur.safetensors"
     	"https://huggingface.co/Shakker-Labs/FilmPortrait/resolve/main/filmfotos.safetensors"
@@ -182,8 +182,8 @@ CONTROLNET_MODELS=(
     #"https://huggingface.co/webui/ControlNet-modules-safetensors/resolve/main/t2iadapter_seg-fp16.safetensors"
     #"https://huggingface.co/webui/ControlNet-modules-safetensors/resolve/main/t2iadapter_sketch-fp16.safetensors"
     #"https://huggingface.co/webui/ControlNet-modules-safetensors/resolve/main/t2iadapter_style-fp16.safetensors"
-    	"https://huggingface.co/Shakker-Labs/FLUX.1-dev-ControlNet-Union-Pro/resolve/main/diffusion_pytorch_model.safetensors"
-    	"https://huggingface.co/xinsir/controlnet-union-sdxl-1.0/resolve/main/diffusion_pytorch_model_promax.safetensors"    
+    "https://huggingface.co/Shakker-Labs/FLUX.1-dev-ControlNet-Union-Pro/resolve/main/diffusion_pytorch_model.safetensors"
+    "https://huggingface.co/xinsir/controlnet-union-sdxl-1.0/resolve/main/diffusion_pytorch_model_promax.safetensors"    
 )
 
 IPAdapter_MODELS=(
@@ -211,7 +211,7 @@ IPAdapter_MODELS=(
   	["ip_plus_composition_sdxl.safetensors"]="https://huggingface.co/ostris/ip-composition-adapter/resolve/main/ip_plus_composition_sdxl.safetensors"
 )
 
-CLIPVISION_Models=(
+CLIPVISION_MODELS=(
 	["CLIP-ViT-H-14-laion2B-s32B-b79K.safetensors"]="https://huggingface.co/h94/IP-Adapter/resolve/main/models/image_encoder/model.safetensors"
 	["CLIP-ViT-bigG-14-laion2B-39B-b160k.safetensors"]="https://huggingface.co/h94/IP-Adapter/resolve/main/sdxl_models/image_encoder/model.safetensors"
 
