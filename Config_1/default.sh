@@ -148,14 +148,14 @@ LORA_MODELS=(
 )
 
 VAE_MODELS=(
-    #"https://huggingface.co/camenduru/FLUX.1-dev/resolve/main/ae.sft"
-    #"https://huggingface.co/stabilityai/sdxl-vae/resolve/main/sdxl_vae.safetensors"
+	#"https://huggingface.co/camenduru/FLUX.1-dev/resolve/main/ae.sft"
+ 	#"https://huggingface.co/stabilityai/sdxl-vae/resolve/main/sdxl_vae.safetensors"
 )
 
 ESRGAN_MODELS=(
-    "https://huggingface.co/ai-forever/Real-ESRGAN/resolve/main/RealESRGAN_x4.pth"
-    "https://huggingface.co/FacehugmanIII/4x_foolhardy_Remacri/resolve/main/4x_foolhardy_Remacri.pth"
-    "https://huggingface.co/Akumetsu971/SD_Anime_Futuristic_Armor/resolve/main/4x_NMKD-Siax_200k.pth"
+	"https://huggingface.co/ai-forever/Real-ESRGAN/resolve/main/RealESRGAN_x4.pth"
+	"https://huggingface.co/FacehugmanIII/4x_foolhardy_Remacri/resolve/main/4x_foolhardy_Remacri.pth"
+	"https://huggingface.co/Akumetsu971/SD_Anime_Futuristic_Armor/resolve/main/4x_NMKD-Siax_200k.pth"
 )
 
 CONTROLNET_MODELS=(
@@ -186,6 +186,36 @@ CONTROLNET_MODELS=(
     	"https://huggingface.co/xinsir/controlnet-union-sdxl-1.0/resolve/main/diffusion_pytorch_model_promax.safetensors"    
 )
 
+IPAdapter_MODELS=(
+	# IPAdapter/base sd15
+  	#["ip-adapter_sd15.safetensors"]="https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter_sd15.safetensors"
+  	#["ip-adapter_sd15_light_v11.safetensors"]="https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter_sd15_light_v11.bin"
+  	#["ip-adapter_plus_sd15.safetensors"]="https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter-plus_sd15.safetensors"
+  	#["ip-adapter-full-face_sd15.safetensors"]="https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter-full-face_sd15.safetensors"
+  	#["ip-adapter_plus_face_sd15.safetensors"]="https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter-plus-face_sd15.safetensors"
+  	# IPAdapter/base sdxl
+	["ip-adapter_sd15_vit-G.safetensors"]="https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter_sd15_vit-G.safetensors"
+  	["ip-adapter_sdxl_vit-h.safetensors"]="https://huggingface.co/h94/IP-Adapter/resolve/main/sdxl_models/ip-adapter_sdxl_vit-h.safetensors"
+  	["ip-adapter_plus_sdxl_vit-h.safetensors"]="https://huggingface.co/h94/IP-Adapter/resolve/main/sdxl_models/ip-adapter-plus_sdxl_vit-h.safetensors"
+  	["ip-adapter_plus_face_sdxl_vit-h.safetensors"]="https://huggingface.co/h94/IP-Adapter/resolve/main/sdxl_models/ip-adapter-plus-face_sdxl_vit-h.safetensors"
+  	["ip-adapter_sdxl.safetensors"]="https://huggingface.co/h94/IP-Adapter/resolve/main/sdxl_models/ip-adapter_sdxl.safetensors"
+  	# # IPAdapter/insightface
+  	["ip-adapter-faceid-sd15.bin"]="https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid_sd15.bin"
+  	["ip-adapter-faceid-plusv2_sd15.bin"]="https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid-plusv2_sd15.bin"
+  	["ip-adapter-faceid-portrait-v11_sd15.bin"]="https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid-portrait-v11_sd15.bin"
+  	["ip-adapter-faceid-sdxl.bin"]="https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid_sdxl.bin"
+  	["ip-adapter-faceid-plusv2_sdxl.bin"]="https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid-plusv2_sdxl.bin"
+  	["ip-adapter-faceid-portrait_sdxl.bin"]="https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid-portrait_sdxl.bin"
+  	# # IPAdapter/community
+  	#["ip_plus_composition_sd15.safetensors"]="https://huggingface.co/ostris/ip-composition-adapter/resolve/main/ip_plus_composition_sd15.safetensors"
+  	["ip_plus_composition_sdxl.safetensors"]="https://huggingface.co/ostris/ip-composition-adapter/resolve/main/ip_plus_composition_sdxl.safetensors"
+)
+
+CLIPVISION_Models=(
+	["CLIP-ViT-H-14-laion2B-s32B-b79K.safetensors"]="https://huggingface.co/h94/IP-Adapter/resolve/main/models/image_encoder/model.safetensors"
+	["CLIP-ViT-bigG-14-laion2B-39B-b160k.safetensors"]="https://huggingface.co/h94/IP-Adapter/resolve/main/sdxl_models/image_encoder/model.safetensors"
+
+)
 ### DO NOT EDIT BELOW HERE UNLESS YOU KNOW WHAT YOU ARE DOING ###
 
 function provisioning_start() {
@@ -229,6 +259,12 @@ function provisioning_start() {
     provisioning_get_models \
         "${WORKSPACE}/storage/stable_diffusion/models/esrgan" \
         "${ESRGAN_MODELS[@]}"
+    provisioning_get_models \
+        "${WORKSPACE}/storage/stable_diffusion/models/ipadapter" \
+        "${IPAdapter_MODELS[@]}"
+    provisioning_get_models \
+        "${WORKSPACE}/storage/stable_diffusion/models/clip_vision" \
+        "${CLIPVISION_MODELS[@]}"	
     provisioning_get_workflows
     provisioning_print_end
 }
